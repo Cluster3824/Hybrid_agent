@@ -1,44 +1,21 @@
 # Hybrid_agent
 
-An AI-powered research assistant that integrates real-time web search, Reddit, and Wikipedia with hybrid LLM support (Ollama + Gemini).
-It combines external knowledge sources with contextual memory to provide detailed, up-to-date, and conversational responses.
+The Hybrid Research Agent Chatbot is a smart assistant that combines the power of AI reasoning with real-time information from the web. Instead of relying only on what a model was trained on, this chatbot can pull in fresh results from Google Search, Reddit, and Wikipedia, then use an LLM to turn that information into clear, contextual answers.
 
-✨ Features
+What makes it different? You’re not just talking to an AI model — you’re talking to an assistant that can:
 
-🔍 Real-time Web Search → Uses Google Search (via SerpAPI) with freshness filters (day, week, month, year).
+🌍 Look up the latest information on the web with freshness filters (past day, week, month, year)
 
-📢 Reddit Integration → Fetches latest community discussions, metadata (upvotes, comments), and snippets.
+💬 Tap into real Reddit discussions for community insights and authentic opinions
 
-📚 Wikipedia Summaries → Retrieves concise explanations with disambiguation handling.
+📚 Summarize Wikipedia articles into quick, digestible explanations
 
-🤖 Hybrid LLM Choice → Switch between Ollama (LLaMA 3.2) and Gemini (Google Generative AI) dynamically.
+🤖 Switch between LLMs (local Ollama with LLaMA 3.2, or cloud-based Gemini) depending on your needs
 
-🧠 Contextual Memory →
+🧠 Remember the conversation with both short-term and long-term memory for more natural interactions
 
-ConversationBufferWindowMemory → Short-term history.
+🎯 Show you references so you know where the answer came from
 
-ConversationSummaryMemory → Summarized long-term history.
+All of this is wrapped in a simple Gradio interface that lets you chat, view sources, clear history, or export a conversation.
 
-🎯 Reference Management → Structured references panel showing results from Web, Reddit, and Wikipedia.
-
-💬 Casual Chat Features → Handles greetings, time queries, and reminders.
-
-🌐 Interactive UI → Built with Gradio, supports chat export and clearing history.
-
-⚙️ Tech Stack
-
-Python 3.10+
-
-LangChain
-
-Gradio
-
-Ollama (LLaMA 3.2)
-
-Google Generative AI (Gemini)
-
-PRAW (Reddit API)
-
-SerpAPI (Google Search API)
-
-Wikipedia API
+This project is meant for students, researchers, and curious minds who want more than static AI responses — it’s about getting up-to-date answers backed by real sources.
