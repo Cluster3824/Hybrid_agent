@@ -1,0 +1,10 @@
+os
+re
+datetime
+wikipedia
+praw
+gradio
+langchain
+langchain-community
+langchain-google-genai
+serpapi
