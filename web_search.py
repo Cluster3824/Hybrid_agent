@@ -12,11 +12,11 @@ from langchain_community.chat_models import ChatOllama
 from langchain_google_genai import ChatGoogleGenerativeAI
 from serpapi import GoogleSearch
 
-SERPAPI_KEY = os.getenv("SERPAPI_KEY", "a61a4486857efe8d02b2533a5d1677e39d8dd78c0db751c4d47f2f60d80a8d86")
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "AIzaSyDEY_weJmWYsjkQmwRqOI4hGAo5-Gxik_0")
+SERPAPI_KEY = os.getenv("SERPAPI_KEY", "Your Serpapi Key")
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "Gemini Key")
 
-REDDIT_CLIENT_ID = os.getenv("REDDIT_CLIENT_ID", "Dvwiz3ue2NMhqGhDCEK1nQ")
-REDDIT_CLIENT_SECRET = os.getenv("REDDIT_CLIENT_SECRET", "xa3jUxc2LxGsA8uaFnWf6X4xvVlRBg")
+REDDIT_CLIENT_ID = os.getenv("REDDIT_CLIENT_ID", "Reddit Key")
+REDDIT_CLIENT_SECRET = os.getenv("REDDIT_CLIENT_SECRET", "Reddit Key")
 REDDIT_USER_AGENT = os.getenv("REDDIT_USER_AGENT", "Hybrid_agent")
 
 OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3.2:latest")
@@ -278,3 +278,4 @@ with gr.Blocks(title="Hybrid Research Agent Chatbot", theme="soft") as iface:
 
 if __name__ == "__main__":
     iface.launch()
+
